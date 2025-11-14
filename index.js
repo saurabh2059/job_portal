@@ -9,4 +9,6 @@ console.log("for conflict check")
 console.log("changes made by aashan in index file")
 console.log("Aashan Made a change")
 
-123456
+
+abcde
+
