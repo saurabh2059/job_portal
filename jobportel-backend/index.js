@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 });
 
 // GET all jobs
-app.get("/api/saurabh/jobs", (req, res) => {
+app.get("/api/aashan/jobs", (req, res) => {
   res.json(jokes); 
   // Use res.json to explicitly send JSON
 });
@@ -40,8 +40,8 @@ app.get("/api/saurabh/jobs", (req, res) => {
 
 
 // POST a new joke
-app.post("/api/saurabh/add", (req, res) => {
-  const { id, desc } = req.body;
+app.post("/api/aashan/add", (req, res) => {
+  const { id, title,desc } = req.body;
 
   // Basic validation
   if (!id || !desc) {
@@ -75,4 +75,4 @@ app.listen(port, () => {
 });
 
 
-console.log("saurabh")
+console.log("aashan")

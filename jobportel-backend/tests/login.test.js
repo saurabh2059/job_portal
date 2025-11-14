@@ -4,7 +4,7 @@ test("React Login Page Test", async () => {
   let driver = await new Builder().forBrowser("chrome").build();
 
   try {
-    await driver.get("http://localhost:5175/login");
+    await driver.get("http://localhost:5173/login");
 
     await driver.findElement(By.id("email")).sendKeys("test@gmail.com");
     await driver.findElement(By.id("password")).sendKeys("123456");
